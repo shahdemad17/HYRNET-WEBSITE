@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+   
+
+   
+    
+    <style>
+.footer-logo {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.footer-logo img {
+  height: 50px !important; /* أو زودي حسب ما تحبي */
+  margin-top: -8px !important;
+  margin-left: 10px !important;
+  object-fit: contain;
+  margin-right: auto; 
+}
+
+/* Navbar يجب أن يكون ثابت */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-size: 1.1rem;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+
+/* زر البروفايل يبقي ظاهر في كل المقاسات */
+
+
+
+
+
+
+  .hero-section {
+    height: 100vh; /* ارتفاع كامل الشاشة */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('photo/aeec244b-e08a-4499-89c6-f20c2f2d54b5.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    
+  }
+  
+  .hero-section .btn {
+    background-color:rgba(255, 87, 34, 0.9);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .hero-section .btn:hover {
+    background-color:rgba(255, 87, 34, 0.9);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+  }
+  
+
+.hello-text {
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name-text {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name-text span {
+    color: white; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.job-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.description-text {
+    font-size: 16px;
+    color:white ;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== Fade-in Base Class ==== */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1.5s ease-out forwards;
+}
+
+/* ==== Delay for Each Element ==== */
+.fade-delay-1 {
+  animation-delay: 0.2s;
+}
+.fade-delay-2 {
+  animation-delay: 0.4s;
+}
+.fade-delay-3 {
+  animation-delay: 0.6s;
+}
+.fade-delay-4 {
+  animation-delay: 0.8s;
+}
+.fade-delay-5 {
+  animation-delay: 1s;
+}
+
+
+/*كود ال footer*/
+
+/* Footer Base */
+.footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+.footer-section h3,
+.footer-section h4,
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 87, 34, 0.9);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: rgba(255, 87, 34, 0.9);
+}
+
+.footer-col {
+  flex: 1 1 280px;
+  min-width: 250px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-col input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-col button {
+  padding: 8px 16px;
+  background-color: rgba(255, 87, 34, 0.9);
+  color: #1f1f1f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-col button:hover {
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.icons i {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icons i:hover {
+  color: rgba(255, 87, 34, 0.9);
+}
+
+.footer-bottom {
+  
+  padding: 6px 10px;
+  margin-top: 10px;
+  text-align: end;
+  color: #aaaaaa;
+  font-size: 12px;
+  line-height: 1.4;
+
+}
+.footer-logo {
+  margin-top: 15px;
+  
+}
+
+.footer-logo img {
+  height: 35px;
+  margin-top: 6px;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section, .footer-col {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .footer-col form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+
+
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    position: absolute !important;
+    left: 50% !important;
+    top: 1px !important; /* يخلي الزرار أعلى شوية */
+    transform: translateX(-50%) !important;
+    z-index: 1051; /* فوق كل حاجة */
+  }
+
+  .navbar .container {
+    position: relative !important;
+    padding-top: 60px; /* تدي مساحة فوق للزرار */
+  }
+
+  .custom-navbar-bg {
+    background-color: rgba(255, 255, 255, 0.97);
+    padding: 15px 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1040;
+    position: relative;
+  }
+
+  .nav-profile {
+   
+   
+    z-index: 1052; /* يخلي البروفايل فوق كل حاجة */
+   
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 30%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+  }
+
+  .nav-profile i {
+    margin-right: 5px;
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+    </style>
+
+</head>
+<body> 
+ 
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent ">
+      <div class="footer-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo" style="height: 50px;">
+        </a>
+      </div>
+      <div class="container position-relative d-flex justify-content-between align-items-center">
+  
+       
+  
+        <!-- زرار التوجل في النص -->
+        <button class="navbar-toggler d-lg-none position-absolute start-50 translate-middle-x" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+  
+        <!-- اللينكات -->
+        <div class="collapse navbar-collapse justify-content-center custom-navbar-bg" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="About.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="Personality home.html" class="nav-link">Personal Test</a></li>
+            <li class="nav-item"><a href="dashboard.php" class="nav-link">Job</a></li>
+            <li class="nav-item"><a href="interview.html" class="nav-link">Interview</a></li>
+            <li class="nav-item"><a href="training.html" class="nav-link">Training</a></li>
+            <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+          </ul>
+        </div>
+  
+        <!-- البروفايل على اليمين -->
+      
+      
+      
+    </div>
+   
+    
+    <a href="profile.php" class="nav-profile">
+      <i class="fas fa-user-circle"></i>
+      <span>Profile</span>
+    </a>
+
+    <div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+
+    </nav>
+  </section>
+  
+  
+
+
+      <section>
+        <div class="hero-section">
+          <div class="content align-items-center justify-content-center text-start">
+            <p class="hello-text fade-up fade-delay-1">Hello There!</p>
+            <h1 class="name-text fade-up fade-delay-2">We're <span>HYRNET</span>,</h1>
+            <h2 class="job-text fade-up fade-delay-3">Web Developers in Egypt.</h2>
+            <p class="description-text mt-4 fade-up fade-delay-4">
+              We're five girls who designed a website to help people find jobs and give them the opportunity to discover which careers they can succeed in.
+            </p>
+            <a href="About.html" class="btn mt-4 fade-up fade-delay-5">Read more</a>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+     
+    
+                
+    
+    
+    
+    
+    
+    
+    
+
+
+      
+
+
+<section>
+
+  <footer class="footer">
+    <div class="footer-container">
+  
+      <!-- USEFUL LINKS -->
+      <div class="footer-section">
+        <h3>USEFUL LINKS</h3>
+        <ul>
+          <li><a href="About.html" class="nav-link">About</a></li>
+          <li><a href="Personality home.html" class="nav-link">Personal Test</a></li>
+          <li><a href="dashboard.php" class="nav-link">Job</a></li>
+          <li><a href="interview.html" class="nav-link">Interview</a></li>
+          <li><a href="training.html" class="nav-link">Training</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        </ul>
+      </div>
+  
+      <!-- ONLINE TRAINING -->
+      <div class="footer-section">
+        <h3>Online Training</h3>
+        <ul>
+          <li><a href="training.html" class="nav-link">Data Analysis</a></li>
+          <li><a href="training.html" class="nav-link">Graphic Design</a></li>
+          <li><a href="training.html" class="nav-link">HTML Languages</a></li>
+          <li><a href="training.html" class="nav-link">Cybersecurity </a></li>
+          <li><a href="training.html" class="nav-link">Digital Marketing</a></li>
+          <li><a href="training.html" class="nav-link">Human Resources</a></li>
+          <li><a href="training.html" class="nav-link">Accounting</a></li>
+          <li><a href="training.html" class="nav-link">Project Mangment</a></li>
+        </ul>
+      </div>
+  
+      <!-- HELP CENTER -->
+      <div class="footer-section">
+        <h4 class="footer-title">HELP CENTER</h4>
+        <ul>
+          <li><a href="help-center.html#faq">FAQ</a></li>
+          <li><a href="help-center.html#Community Guidelines">Community Guidelines</a></li>
+          <li><a href="help-center.html#Advertise">Advertise</a></li>
+          <li><a href="help-center.html#terms">Terms & Conditions</a></li>
+        </ul>
+      </div>
+  
+      <!-- NEWSLETTER (moved up here) -->
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe to our newsletter for a weekly dose of news, updates, helpful tips, and exclusive offers.</p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      
+      <div class="footer-logo m-3">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <p>&copy; 2025 YourCompany. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+</section>
+      
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+    
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+ 
+
+
+</html>

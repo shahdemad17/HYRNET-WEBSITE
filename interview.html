@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <style>
+        .bottom-section {
+          opacity: 0;
+          transform: translateY(100px);
+          animation: slideUp 1s ease-out forwards;
+          animation-delay: 0.3s;
+        }
+      .thumbnail{
+        opacity: 0;
+          transform: translateY(100px);
+          animation: slideUp 1s ease-out forwards;
+          animation-delay: 0.3s;
+      }
+        @keyframes slideUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+      
+</head>
+<body> 
+  
+    <div class="top-section">
+                          <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+
+        <nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="Logo">
+            </div>
+            
+            <div class="container">
+                
+              
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item active">
+                      <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="About.html" class="nav-link" href="#">About</a>
+                    </li>
+                    
+                      <li class="nav-item">
+                        <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+                      </li>
+        
+                      <li class="nav-item">
+                        <a href="interview.html" class="nav-link" href="#">Interview</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="training.html"  class="nav-link" href="#">Training</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+                      </li>
+                     </ul>
+                     
+                  
+                     
+                     
+                      
+
+            </div>
+           
+            <a href="profile.php" class="nav-profile">
+                <i class="fas fa-user-circle"></i>
+                <span>Profile</span>
+              </a>
+             
+            </div>
+           <!-- ✅ ويدجت الترجمة في مكان ثابت أعلى الصفحة -->
+           <div id="google_translate_element" style="position: absolute; top: 12px; left: 200px; z-index: 9999;"></div>
+
+
+          </nav>
+    </div>
+
+   
+
+    <div class="bottom-section slide-up ">
+        <div class="carousel container py-5">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-04-22_01-09-09.jpg" style="margin-left: 50px;" class="img-fluid rounded shadow ms-3" >
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6" >
+                            <h3 class="mb-2">Mostafa Attia</h3>
+                            <p>experienced HR specialist with a passion for helping job seekers succeed. With a strong background in recruitment, talent development, and interview coaching,
+                                he has helped hundreds of candidates land their dream jobs. </p> 
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                               
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                               
+                                
+                                 </p>
+                                 <p>👉 Start training today and make your next interview your best one yet!</p>
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:shahdemadeldin17@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ثاني عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-04-14_23-06-00.jpg" style="margin-left: 50px;" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h3 class="mb-2">Mona Megahed</h3>
+                            <p>  HR Generalist with experience in recruitment and human resources development. She has worked for several companies in Cairo, including Inspire and New Horizon.</p>
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                                
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                               
+                                
+                                 </p>
+                                <p>👉 Start training today and make your next interview your best one yet!</p> 
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:Shaaimaa.khaled@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ثالث عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-03-30_04-46-34.jpg"  style="margin-left: 50px;" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h3 class="mb-2">Reem Khalil</h3>
+                            <p> prominent Egyptian expert in the field of human resources, with over two decades of extensive experience across multiple sectors. Her deep expertise and leadership have made her a trusted figure in driving HR excellence and organizational success.
+
+                            </p>
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                                
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                                
+                                
+                                 </p>
+                                <p>👉 Start training today and make your next interview your best one yet!</p> 
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:Daiehabtobar@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- رابع عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-04-14_22-58-51.jpg"  style="margin-left: 50px;" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h3 class="mb-2">Dr.Ahmed ELsayed</h3>
+                            <p>accomplished HR Consultant, HR Trainer, and Management Consultant with expertise in business strategy. Holding an MBA, DBA, SPHRi, PMP, ISO Lead, and Certified Assessor credentials, he is also a skilled Career Coach and Trainer of Trainers (TOT), dedicated to shaping successful careers and optimizing organizational growth."
+                                </p>
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                               
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                               
+                                
+                                 </p>
+                                 <p>👉 Start training today and make your next interview your best one yet!</p>
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:shahdemadeldin17@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خامس عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-04-14_20-54-10.jpg"  style="margin-left: 50px;" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h3 class="mb-2">Eslam Hamdy</h3>
+                            <p>experienced HR professional and interview coach, specializing in talent development and recruitment strategies. With extensive expertise in preparing candidates for successful interviews, he equips individuals with the skills needed to excel in competitive job markets.</p>
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                               
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                                 </p>
+                                 <p>👉 Start training today and make your next interview your best one yet!</p>
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:basmalae617@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- سادس عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-04-14_21-00-30.jpg"  style="margin-left: 50px;" class="img-fluid rounded shadow">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <h3 class="mb-2">Ibrahim Abou El Fotouh</h3>
+                            <p>distinguished HR professional with a wealth of experience spanning over two decades in leading organizations across multiple sectors. he has consistently demonstrated exceptional expertise in talent acquisition, leadership development, and strategic HR management, driving success and growth at every step.
+
+                            </p>
+                            <h5 class="mb-4 " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field. This unique training experience is designed to help you:
+
+
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                               
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.</p>
+                            
+                            <p>👉 Start training today and make your next interview your best one yet!</p>
+                            
+                            
+                            <div class="buttons mt-5  text-light">
+                                <a href="mailto:mayaibrahim2517@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- سابع عنصر -->
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <img src="photo of interview/photo_2025-03-30_05-08-23.jpg"  style="margin-left: 50px;" class="img-fluid rounded shadow ">
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6" >
+                            <h3 class="mb-2">Salma Hisham</h3>
+                            <p>Experienced HR specialist with expertise in recruitment, talent acquisition, and personnel affairs. Skilled in managing the full recruitment cycle, employee relations, and developing HR strategies that align with business goals. Proven track record in optimizing workforce performance and fostering a positive organizational culture."
+
+                            </p>
+                            <h5 class="mb-4   " style="color: rgba(255, 87, 34, 0.9) ;">Practice Interviews with Expert HR Professionals</h5>
+                            <p>
+                                Practice Interviews with Expert HR Professionals
+                                At our platform, we offer realistic mock interviews conducted by experienced HR professionals who specialize in your field.
+                                 This unique training experience is designed to help you:
+                            </p>
+                            <ul>
+                                <li>Gain confidence in your communication and interview skills</li>
+                               
+                                <li>Receive personalized feedback on your performance</li>
+                                <li>Understand what recruiters and employers are really looking for</li>
+                                <li>Prepare for real job interviews with less stress and more success</li>
+                               
+                            </ul>
+                            <p>Whether you're a fresh graduate or a job seeker aiming for your next big opportunity, our mock interviews will help you stand out and feel fully prepared.
+
+                                
+                                </p>
+                                <p>👉 Start training today and make your next interview your best one yet!</p>
+                            <div class="buttons  mt-5 text-light">
+                                <a href="mailto:samakhaleedd@gmail.com?subject=Interview%20Request&body=Hello,%20I%20would%20like%20to%20schedule%20an%20interview." target="_blank">
+                                    <button>Reserve Interview</button>
+                                </a>
+                                <a href="mailto:subscribe@yourplatform.com?subject=Subscribe%20Request&body=I%20would%20like%20to%20subscribe%20to%20your%20service." target="_blank">
+                                    <button class="btn-subscribe">Subscribe</button>
+                                </a>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+ <!-- list thumnail -->
+ <div class="thumbnail slide-up">
+    <div class="item">
+        <img src="photo of interview/photo_2025-04-22_01-09-09.jpg">
+        <div class="content">
+            <div class="title">
+                Mostafa Attia
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="photo of interview/photo_2025-04-14_23-06-00.jpg">
+        <div class="content">
+            <div class="title">
+                Mona Megahed
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="photo of interview/photo_2025-03-30_04-46-34.jpg">
+        <div class="content">
+            <div class="title">
+                Reem Khalil
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="item">
+        <img src="photo of interview/photo_2025-04-14_22-58-51.jpg">
+        <div class="content">
+            <div class="title">
+                Ahmed ELsayed
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="photo of interview/photo_2025-04-14_20-54-10.jpg">
+        <div class="content">
+            <div class="title">
+                Eslam Hamdy
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="photo of interview/photo_2025-04-14_21-00-30.jpg">
+        <div class="content">
+            <div class="title">
+                Ibrahim Abou El Fotouh
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <img src="photo of interview/photo_2025-03-30_05-08-23.jpg">
+        <div class="content">
+            <div class="title">
+                Salma Hisham
+            </div>
+            <div class="description">
+                HR
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Controls -->
+            <div class="text-center mt-4 " >
+                <button class="btn  me-2 m-1 "  id="prev">&laquo; Previous</button>
+                <button class="btn  m-1" id="next">Next &raquo;</button>
+            </div>
+         
+        </div>
+    </div>
+
+  
+  
+     
+      
+    <script>
+        window.googleTranslateElementInit = function () {
+          new google.translate.TranslateElement({
+              pageLanguage: 'en',
+              includedLanguages: 'en,ar',
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            },
+            'google_translate_element'
+          );
+        };
+      </script>
+      
+      
+      <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+ 
+
+
+  
+      
+
+      
+</body>
+</html> 

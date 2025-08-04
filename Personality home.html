@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>HYRNET</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+
+
+
+.footer-logo img {
+ 
+
+  
+ height: 6vh;
+ 
+ margin-top: 6px;
+  margin-left: 20px;
+   
+ 
+ }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* أو أي لون مناسب */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل بسيط للشكل */
+  font-size: 1rem;
+ 
+}
+
+
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+
+ 
+
+body {
+    
+    background-color: #ffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+
+
+
+
+
+.container-text {
+    
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+.title h2 {
+    
+    color: black;
+    font-weight: 600px bold;
+    
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 60px;
+    
+
+}
+
+.highlight-green {
+    color: rgba(255, 87, 34, 0.9);;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.bg-light {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.form-check-input {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background: rgba(255, 87, 34, 0.9);;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+.btn-primary:hover {
+    background: rgba(255, 87, 34, 0.9);;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+}
+
+
+
+
+
+    /* Keyframe animation for bottom to top effect */
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Applying the animation to specific elements */
+    .animate-up {
+      animation: slideUp 1s ease-out forwards;
+    }
+
+    .top-left-image {
+      position: absolute;
+      top: 160px;
+      left: 60px;
+      max-width: 1200px;
+    }
+
+    .highlight-green {
+      color: rgba(255, 87, 34, 0.9);
+      font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .intro-section {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align: start;
+      margin-right: 5rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .btn-start {
+      background-color: rgba(255, 87, 34, 0.9);
+      color: white;
+      padding: 12px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .btn-start:hover {
+      background-color: rgba(255, 87, 34, 0.9);
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+    }
+
+
+    @media (max-width: 768px) {
+  .flex-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .top-left-image {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .intro-section {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .intro-section h2 {
+    font-size: 2rem;
+  }
+
+  .intro-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-start {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+    
+  </style>
+</head>
+<body>
+
+    <section>
+      <nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Logo">
+        </div>
+        
+        <div class="container">
+            
+          
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item active">
+                  <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="About.html" class="nav-link" href="#">About</a>
+                </li>
+                
+                  <li class="nav-item">
+                    <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a href="interview.html" class="nav-link" href="#">Interview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="training.html"  class="nav-link" href="#">Training</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+                  </li>
+                 </ul>
+                
+                 
+              <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+
+   
+        </div>
+       
+        <a href="profile.php" class="nav-profile">
+          <i class="fas fa-user-circle"></i>
+          <span>Profile</span>
+        </a>
+        <div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+        </div>
+      </nav>
+    </section>
+
+  <div class="container">
+    <img src="photo/photo_2025-03-27_19-45-12-removebg-preview.png" class="top-left-image" alt="Personality Image">
+  </div>
+
+  <div class="container intro-section animate-up" style="font-family: 'Roboto', sans-serif;">
+    <h2 class="mb-4 animate-up" style="color: rgba(255, 87, 34, 0.9); font-size: 4rem;">Personality Test</h2>
+    <h1 class="animate-up">Let us help you discover your <span class="highlight-green">ideal career path</span></h1>
+    <p class="lead mt-4 animate-up">With this simple yet powerful test, you’ll gain deep insight into your personality type and how it aligns with different career options.</p>
+    <p class="lead animate-up">At <strong>HYRNET</strong>, we use this assessment to guide you toward the most suitable job opportunities that match your unique strengths, preferences, and passions.</p>
+    <a href="personality test.html" class="btn btn-start  animate-up" onclick="startQuiz()">Start Now</a>
+  </div>
+
+
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'ar,en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>

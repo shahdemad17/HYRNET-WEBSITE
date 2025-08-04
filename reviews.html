@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <style>
+
+      /* تنسيق الصفحة العامة */
+
+      .footer-logo img {
+ 
+
+  
+ height: 6vh;
+ 
+ margin-top: 6px;
+  margin-left: 20px;
+   
+ 
+ }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* أو أي لون مناسب */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل بسيط للشكل */
+}
+
+
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    padding-top: 60px;
+}
+
+
+ 
+
+
+/* حاوية التقييمات */
+.reviews-section {
+    text-align: center;
+    max-width: 1000px;
+}
+
+/* العنوان الرئيسي */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(255, 87, 34, 0.9);
+    margin-bottom: 5px;
+}
+
+/* الوصف أسفل العنوان */
+.subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+/* شبكة التقييمات */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* خليها صفين وعمودين */
+    gap: 40px;
+    
+}
+
+/* تصميم كل مراجعة */
+.review {
+    background-color: #b6b5b5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    height: 200px; /* تعديل الحجم ليكون متناسق مثل الصورة */
+}
+
+/* صورة المستخدم */
+.review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* محتوى التقييم */
+.review-content {
+    flex: 1;
+    text-align: left;
+}
+
+/* اسم المستخدم */
+.review h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
+
+/* اسم الحساب */
+.username {
+    font-size: 14px;
+    color:#242424;
+    margin: 3px 0;
+}
+
+/* نص التقييم */
+.review-text {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* نجوم التقييم */
+.stars {
+    font-size: 18px;
+    color: gold;
+}
+
+/* تأثير Hover */
+.review:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .delay-1 { animation-delay: 0.3s; }
+  .delay-2 { animation-delay: 0.6s; }
+  .delay-3 { animation-delay: 0.9s; }
+  .delay-4 { animation-delay: 1.2s; }
+  .delay-5 { animation-delay: 1.5s; }
+
+
+
+  @media (max-width: 767px) {
+  .reviews-container {
+    grid-template-columns: 1fr;
+    gap: 8px; /* تصغير المسافة بين البوكسات */
+    padding: 0 10px; /* مساحة جانبية بسيطة */
+  }
+
+  .review {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 12px; /* تقليل الحشو */
+    border-radius: 8px; /* زوايا أقل */
+  }
+
+  .review img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  .review-content {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .review-content h3 {
+    font-size: 15px;
+  }
+
+  .username {
+    font-size: 12px;
+  }
+
+  .review-text {
+    font-size: 13px;
+  }
+
+  .stars {
+    font-size: 16px;
+  }
+}
+
+    </style>
+
+</head>
+<body>   
+
+  <nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    
+    <div class="container">
+        
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html" class="nav-link" href="#">About</a>
+            </li>
+            
+              <li class="nav-item">
+                <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="interview.html" class="nav-link" href="#">Interview</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html"  class="nav-link" href="#">Training</a>
+              </li>
+              <li class="nav-item">
+                <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+              </li>
+             </ul>
+             
+            
+             
+
+            <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+           
+    </div>
+    <a href="profile.php" class="nav-profile">
+      <i class="fas fa-user-circle"></i>
+      <span>Profile</span>
+    </a>
+    <div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+    </div>
+  </nav>
+   
+<div class="reviews-section ">  <!-- بدلاً من container -->
+    <h2 class="title slide-up delay-1"> Our Customers' Opinions About Our Services</h2>
+    <p class="subtitle slide-up delay-2">We are always delighted by your experiences and feedback! Here are some reviews from our valued customers! ✨</p>
+    
+
+    <div class="reviews-container">
+        <div class="review slide-up delay-3 ">
+            <img src="photo of reviews/photo_2025-04-12_00-12-09 (2).jpg" >
+             <div class="review-content">
+                <h3>Youssef Adel</h3>
+                <p class="username">@youssef.3del</p>
+                <p class="review-text">The personal test really helped me understand my strengths!...</p>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+            </div>
+        </div>
+
+        <div class="review slide-up delay-3">
+          <img src="photo of reviews/photo_2025-04-12_00-12-09.jpg" >
+           <div class="review-content">
+              <h3>Omar Hossam</h3>
+              <p class="username">@omar_hssem</p>
+              <p class="review-text">The virtual interview was smooth and actually fun...</p>
+              <div class="stars">⭐⭐⭐⭐☆</div>
+          </div>
+      </div>
+
+      <div class="review slide-up delay-3">
+        <img src="photo of reviews/photo_2025-04-12_00-08-19.jpg" >
+         <div class="review-content">
+            <h3>Nour Adel </h3>
+            <p class="username">@nour.adel.1</p>
+            <p class="review-text">Got a job match within days, amazing experience...</p>
+            <div class="stars">⭐⭐⭐⭐☆</div>
+        </div>
+    </div>
+
+    <div class="review slide-up delay-3">
+      <img src="photo of reviews/photo_2025-04-12_00-08-20.jpg" >
+       <div class="review-content">
+          <h3>Menna Ibrahim</h3>
+          <p class="username">@Menna.Ib</p>
+          <p class="review-text">I didn’t qualify at first, but the training changed everything!...</p>
+          <div class="stars">⭐⭐⭐⭐☆</div>
+      </div>
+  </div>
+
+  <div class="review slide-up delay-3">
+    <img src="photo of reviews/photo_2025-04-12_00-08-21.jpg" >
+     <div class="review-content">
+        <h3>Karim Tamer</h3>
+        <p class="username">@ karim_tm</p>
+        <p class="review-text">
+          Great support, and the job suggestions were spot on!...</p>
+        <div class="stars">⭐⭐⭐⭐☆</div>
+    </div>
+</div>
+
+<div class="review slide-up delay-3">
+  <img src="photo of reviews/photo_2025-04-12_00-14-54 (2).jpg" >
+   <div class="review-content">
+      <h3>Ahmed Magdy</h3>
+      <p class="username">@ahmed.mgdyy</p>
+      <p class="review-text">Finally, a recruitment platform that feels human and helpful...</p>
+      <div class="stars">⭐⭐⭐⭐☆</div>
+  </div>
+</div>
+
+<div class="review slide-up delay-3">
+  <img src="photo of reviews/photo_2025-04-12_00-08-19 (2).jpg" >
+   <div class="review-content">
+      <h3>Dina Mohamed</h3>
+      <p class="username">@dina.mhd.22</p>
+      <p class="review-text">Smooth job-hunting experience! Got connected with top companies...</p>
+      <div class="stars">⭐⭐⭐⭐☆</div>
+  </div>
+</div>
+
+        <div class="review slide-up delay-3">
+            <img src="photo of reviews/photo_2025-04-12_00-14-54.jpg" >
+            <div class="review-content">
+                <h3>Mostafa Nabil</h3>
+                <p class="username">@mostafa.nbl</p>
+                <p class="review-text">Great variety of job listings and helpful resume tips...</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <div class="review slide-up delay-3">
+            <img src="photo of reviews/photo_2025-04-12_00-15-25.jpg" >
+            <div class="review-content">
+                <h3>Salma khalid</h3>
+                <p class="username">@salma.kh</p>
+                <p class="review-text">Easy to use with fast responses! I got an interview within a week...</p>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+            </div>
+        </div>
+
+        <div class="review slide-up delay-3">
+            <img src="photo of reviews/photo_2025-04-12_00-08-20 (2).jpg" >
+            <div class="review-content">
+                <h3>Toqa Mahmoud</h3>
+                <p class="username">@toqa_73</p>
+                <p class="review-text">The platform helped me find a great job in just a few days...</p>
+                <div class="stars">⭐⭐⭐⭐☆</div>
+            </div>
+        </div>
+
+      
+
+    
+
+
+    </div>
+</div>
+
+
+  
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+     
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+ 
+
+</body>
+
+
+ 
+
+
+</html>

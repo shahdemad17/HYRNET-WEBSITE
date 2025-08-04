@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+<style>
+  body {
+    
+    background-color: #fff;
+  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 100px;
+    font-family: 'Roboto', sans-serif !important;
+      
+  }
+  
+  
+ 
+
+.footer-logo img {
+ 
+
+  
+height: 6vh;
+
+margin-top: 6px;
+ margin-left: 20px;
+  
+
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* أو أي لون مناسب */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل بسيط للشكل */
+  font-size: 1rem;
+}
+
+
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+
+  
+  
+   
+  .about-section {
+      background-color: #fff; /* خلي الخلفية بيضاء */
+      color: #000 ;
+      padding: 60px 0;
+       /* خلي النص أسود وواضح */
+     
+        margin-top: 120px;
+
+      
+      
+      
+       
+       
+    }
+    
+  .about-section h3 {
+      font-size: 50px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 50px;
+      
+   }
+    
+    .about-section .lead {
+      font-size: 15px;
+      margin-bottom: 30px;
+      top: 15px;
+      color: #555;
+      font-weight: bold;
+      
+      
+  
+    }
+    
+    
+    
+    .about-section p, 
+    .about-section h4 {
+      color: #222 !important; /* النصوص الفرعية */
+    }
+    
+    .play-btn {
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 87, 34, 0.9);
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: url('https://img.icons8.com/ios-filled/50/ffffff/play.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50%;
+      transition: background-color 0.3s ease;
+    }
+    .play-btn:hover {
+
+      background-color: white;
+     
+
+    }
+    
+    .icon-box {
+      margin-bottom: 20px;
+      padding-left: 60px;
+      position: relative;
+    }
+    .icon-box i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 32px;
+      color: #ff5722;
+    }
+    .icon-box h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .icon-box p {
+      font-size: 15px;
+      color: #555;
+    }
+    
+  
+    /* Animation from bottom to top */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-up {
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+
+  @media (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 768px) {
+  .nav-profile {
+    right: 10px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .nav-profile i {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .about-section h3 {
+    font-size: 32px;
+  }
+
+  .about-section .lead {
+    font-size: 14px;
+  }
+
+  .icon-box {
+    padding-left: 40px;
+  }
+
+  .icon-box h4 {
+    font-size: 16px;
+  }
+
+  .icon-box p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: column;
+  }
+
+  .about .col-lg-6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+    background-size: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+}
+
+  
+</style>
+   
+
+
+    
+
+</head>
+
+    
+<nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+  
+  <div class="container">
+      
+    
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="About.html" class="nav-link" href="#">About</a>
+          </li>
+          
+            <li class="nav-item">
+              <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+            </li>
+            <li class="nav-item">
+              <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="interview.html" class="nav-link" href="#">Interview</a>
+            </li>
+            <li class="nav-item">
+              <a href="training.html"  class="nav-link" href="#">Training</a>
+            </li>
+            <li class="nav-item">
+              <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+            </li>
+           </ul>
+           
+         
+           
+                      <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+
+
+
+  </div>
+ 
+  <a href="profile.php" class="nav-profile">
+    <i class="fas fa-user-circle"></i>
+    <span>Profile</span>
+  </a>
+
+  <div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+  </div>
+</nav>
+
+
+
+<section id="about" class="about mt-5" >
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center position-relative" >
+        <img src="https://bootstrapmade.com/demo/templates/Flexor/assets/img/about.jpg" alt="About Image" class="img-fluid">
+        <a href="https://youtu.be/UEicFPLSrJs?feature=shared" class="play-btn" target="_blank"></a>
+      </div>
+      <div class="col-lg-6 content animate-up ">
+        <h3>About Us</h3>
+        <p class="lead mt-4 mb-4">Empowering individuals to achieve their professional potential through deep personality analysis, smart career guidance, and personalized training.</p>
+
+        <div class="icon-box animate-up" style="animation-delay: 0.3s;">
+          <i class="bi bi-person-bounding-box"></i>
+          <h4>Deep Personality Analysist</h4>
+          <p>We begin with a thorough personality test to understand your strengths and preferences.</p>
+        </div>
+
+        <div class="icon-box animate-up "style="animation-delay: 0.6s;">
+          <i class="bi bi-briefcase-fill"></i>
+          <h4>Smart Job Matching</h4>
+          <p>Based on your profile, we recommend jobs that truly fit your character and skills.
+          </p>
+        </div>
+
+        <div class="icon-box animate-up " style="animation-delay: 0.9s;">
+          <i class="bi bi-camera-video-fill"></i>
+          <h4>Virtual Mock Interviews</h4>
+          <p>Practice interviews to help you gain confidence and perform your best in real ones.
+          </p>
+        </div>
+
+        <div class="icon-box animate-up" style="animation-delay: 1.2s;">
+          <i class="bi bi-bar-chart-steps"></i>
+          <h4>Skill Training & Career Coaching</h4>
+          <p>Personalized programs to help you grow your skills and excel in your career path.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+     
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+ 
+</body>
+</html>

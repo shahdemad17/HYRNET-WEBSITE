@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- Linking Swiper CSS -->
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style>
+    .hero-section {
+      opacity: 0;
+      transform: translateY(100px);
+      animation: slideUp 1s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+  .career-section{
+    opacity: 0;
+      transform: translateY(100px);
+      animation: slideUp 1s ease-out forwards;
+      animation-delay: 0.3s;
+  }
+    @keyframes slideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+</head> 
+<body>
+
+  <section>
+    <nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      
+      <div class="container">
+          
+        
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item active">
+                <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a href="About.html" class="nav-link" href="#">About</a>
+              </li>
+              
+                <li class="nav-item">
+                  <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+                </li>
+                <li class="nav-item">
+                  <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="interview.html" class="nav-link" href="#">Interview</a>
+                </li>
+                <li class="nav-item">
+                  <a href="training.html"  class="nav-link" href="#">Training</a>
+                </li>
+                <li class="nav-item">
+                  <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+                </li>
+               </ul>
+               
+            
+      </div>
+      <a href="profile.php" class="nav-profile">
+        <i class="fas fa-user-circle"></i>
+        <span>Profile</span>
+      </a>
+       
+    <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+    <div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+
+      
+      </div>
+    </nav>
+  </section>
+ 
+
+  <div class="hero-section" style="
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* وضع المحتوى في يمين الشاشة */
+  padding: 50px 60px 30px 20px;
+  background-image: url('training photo/Picsart_25-05-05_17-42-27-043 (1).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  position: relative;
+">
+  <!-- طبقة ظل شفافة -->
+  <div style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+  "></div>
+
+  <!-- المحتوى -->
+  <div style="
+    position: relative;
+    z-index: 2;
+    text-align: center;   /* ✅ يجعل النص متوسط داخليًا */
+    max-width: 500px;     /* ✅ يمنع تمدد النص أكثر من اللازم */
+  ">
+    <h1 class="title" style="margin-top: 20px; font-size: 60px;">
+      Achieve your professional goals with
+    </h1>
+    <h1 class="highlight-green hyrnet-title" style="color: rgba(255, 87, 34, 0.9); margin-top: 10px; font-size: 40px;">
+      HYRNET
+    </h1>
+    <h2 class="subtitle" style="font-size: 30px; font-weight: bold; margin-top: 30px;">
+      <i class="fa fa-lightbulb"></i> Subscribe to learn new skills.
+    </h2>
+  </div>
+</div>
+
+
+
+
+     
+      
+       
+        
+        <div class="career-section container text-center my-5 slide-up " style="margin-top: 30px; margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;">
+          <h3 class="career-title fw-bold mb-5" style="font-size: 2.5rem;">Invest in your career</h3>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 mb-4 slide-up">
+              <div class="career-icon mb-3">
+                <i class="bi bi-bullseye" style="font-size: 4rem;"></i>
+              </div>
+              <h5 class="career-heading fw-bold" style="font-size:1.6rem ;">Explore new skills</h5>
+              <p class="career-text">
+                <i class="bi bi-lightbulb me-2 text-primary"></i>
+                Access 10,000+ courses in AI, business, technology, and more.
+              </p>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 mb-4 slide-up">
+              <div class="career-icon mb-3">
+                <i class="bi bi-award" style="font-size: 4rem;"></i>
+              </div>
+              <h5 class="career-heading fw-bold" style="font-size:1.6rem ;">Earn valuable credentials</h5>
+              <p class="career-text">
+                <i class="bi bi-patch-check me-2 text-success"></i>
+                Get certificates for every course you finish and boost your chances of getting hired after your trial ends at no additional cost.
+              </p>
+            </div>
+        
+            <div class="col-12 col-sm-6 col-md-4 mb-4 slide-up">
+              <div class="career-icon mb-3">
+                <i class="bi bi-star" style="font-size: 4rem;"></i>
+              </div>
+              <h5 class="career-heading fw-bold" style="font-size:1.6rem ;">Learn from the best</h5>
+              <p class="career-text">
+                <i class="bi bi-mortarboard me-2 text-warning" ></i>
+                Take your skills to the next level with expert-led courses and Coursera Coach, your AI-powered guide.
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+        
+      <!-- Communication Skills Section -->
+      <div class="container text-center mt-5" style="margin-top: 80px;">
+          <h4 class="col-12 col-sm-6 col-md-4 mb-4">Communication skills</h4>
+          <div class="row">
+              <!-- Video 1 -->
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914797_m.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#commVideoModal1">
+                  
+              </div>
+              <!-- Video 2 -->
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914795_y.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#commVideoModal2">
+              </div>
+              <!-- Video 3 -->
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914784_x.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#commVideoModal3">
+              </div>
+          </div>
+      </div>
+  
+      <!-- Communication Modals -->
+      <div class="modal fade" id="commVideoModal1" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 1</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="commVideoPlayer1" width="100%" controls>
+                      <source src="training photo/document_5998877824159585439.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="commVideoModal2" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 2</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="commVideoPlayer2" width="100%" controls>
+                      <source src="training photo/document_5998877824159585437.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="commVideoModal3" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 3</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="commVideoPlayer3" width="100%" controls>
+                      <source src="training photo/document_6001496281036363846.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <!-- Personal Skills Section -->
+      <div class="container text-center mt-5">
+          <h4 class="col-12 col-sm-6 col-md-4 mb-4">Personal skills</h4>
+          <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914816_x.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#persVideoModal1">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914808_y.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#persVideoModal2">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914807_x.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#persVideoModal3">
+              </div>
+          </div>
+      </div>
+  
+      <!-- Personal Modals -->
+      <div class="modal fade" id="persVideoModal1" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 1</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="persVideoPlayer1" width="100%" controls>
+                      <source src="training photo/document_6019170651279989200.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="persVideoModal2" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 2</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="persVideoPlayer2" width="100%" controls>
+                      <source src="training photo/document_6021422451093673147.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="persVideoModal3" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 3</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="persVideoPlayer3" width="100%" controls>
+                      <source src="training photo/document_6019170651279989204.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <!-- English Skills Section -->
+      <div class="container text-center mt-5">
+          <h4 class="col-12 col-sm-6 col-md-4 mb-4">English skills</h4>
+          <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914739_y.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#engVideoModal1">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914737_x.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#engVideoModal2">
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-4">
+                  <img src="training photo/photo_6021422451549914732_y.jpg" class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#engVideoModal3">
+              </div>
+          </div>
+      </div>
+  
+      <!-- English Modals -->
+      <div class="modal fade" id="engVideoModal1" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 1</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="engVideoPlayer1" width="100%" controls>
+                      <source src="training photo/document_6021422451093673211.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="engVideoModal2" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 2</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="engVideoPlayer2" width="100%" controls>
+                      <source src="training photo/document_6021422451093673214.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+  
+      <div class="modal fade" id="engVideoModal3" tabindex="-1">
+          <div class="modal-dialog modal-lg"><div class="modal-content">
+              <div class="modal-header"><h5 class="modal-title">Watch the video 3</h5><button class="btn-close" data-bs-dismiss="modal"></button></div>
+              <div class="modal-body">
+                  <video id="engVideoPlayer3" width="100%" controls>
+                      <source src="training photo/document_6021422451093673230.mp4" type="video/mp4">
+                  </video>
+              </div>
+          </div></div>
+      </div>
+      <div class="hyrnet-name">HYRNET_PIUS</div>
+  
+  
+  
+  
+  <!-- كود الswipper-->
+      
+  
+  
+  <div class="container swiper">
+    <div class="wrapper swiper-container">
+      <div class="card-list swiper-wrapper">
+        <!-- Single Card -->
+        <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/photo_6041629546828122454_y.jpg" alt="Design Trends" />
+            <div class="card-tag">HYRNET_PLUS</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Data Analysis.</h3>
+            <p class="card-text">Get the skills to read numbers like a pro, find the real stories behind the data, and make smart moves.
+              .</p>
+              <p><span class="price-label">PRICE:</span> <span class="price-value">2000 L.E</span> </p>
+  
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/user-1.jpg" alt="Ahmed Alaa" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Ahmed Alaa</span>
+                  <span class="card-profile-role">Data_Analyst</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single Card -->
+        <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/development.jpg" alt="Development" />
+            <div class="card-tag">HYRNET_PIUS</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">HTML Language</h3>
+            <p class="card-text">Build cool pages, write real code, and launch your web journey — all made simple with a chill pro guiding you.</p>
+            <p><span class="price-label">PRICE:</span> <span class="price-value">1500 L.E</span> </p>
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/user-2.jpg" alt="Jessica Hany" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Jessica Hany</span>
+                  <span class="card-profile-role">Web_Developer</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single Card -->
+        <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/ai.jpg" alt="AI" />
+            <div class="card-tag">HYRNET_PIUS</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Graphic Design Course </h3>
+            <p class="card-text">Master the basics of graphic design colors, layouts, and killer visuals all with real tools and a creative twist .</p>
+  
+            <p><span class="price-label">PRICE:</span> <span class="price-value">2500 L.E</span> </p>
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/user-3.jpg" alt="Hazem ibrahim" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Hazem ibrahim</span>
+                  <span class="card-profile-role">Graphic_Designer</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Single Card -->
+        <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/photo_6041629546828122445_y.jpg" alt="Productivity" />
+            <div class="card-tag">HYRNET_PIUS</div>
+          </div>
+          <div class="card-content">
+            <h2 class="card-title">Project Mangment .</h2>
+            <p class="card-text">This course covers planning, execution, preparing you to become an effective project leader in any industry.</p>
+  
+            <p><span class="price-label">PRICE:</span> <span class="price-value">2000 L.E</span> </p>
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/photo_6043881346641806742_x.jpg" alt="Sarah Miller" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Sarah Miller</span>
+                  <span class="card-profile-role">Project_Manager</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+         <!-- Single Card -->
+         <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/photo_6041629546828122450_y.jpg" alt="Productivity" />
+            <div class="card-tag">HYRNET_PIUS</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"> Digital Marketing course.</h3>
+            <p class="card-text">From social media to SEO — get the skills to grow brands online, with real tools, quick wins, and pro tips that actually work.</p>
+            <p><span class="price-label">PRICE:</span> <span class="price-value">1500 L.E</span> </p>
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/photo_6043881346641806740_x.jpg" alt="Rana mohamed" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Rana mohamed</span>
+                  <span class="card-profile-role">Digital_Marketer</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+         <!-- Single Card -->
+         <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/photo_6041629546828122448_y.jpg" alt="Productivity" />
+            <div class="card-tag">HYRNET_PIUS </div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title"> Accounting course</h3>
+            <p class="card-text">Learn budgeting, financial planning, financial statments and decision-making to drive success.</p>
+            <p><span class="price-label">PRICE:</span> <span class="price-value">2000 L.E</span> </p>
+            <div class="card-footer">
+              <div class="card-profile">
+                <img src="training photo/photo_6043881346641806739_x.jpg" alt="Mona khaled" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">Mona khaled</span>
+                  <span class="card-profile-role">Financial_Accountant</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+  
+   <!-- Single Card -->
+   <div class="card swiper-slide">
+    <div class="card-image">
+      <img src="training photo/photo_6041629546828122336_y.jpg" alt="Productivity" />
+      <div class="card-tag">HYRNET_PIUS</div>
+    </div>
+    <div class="card-content">
+      <h3 class="card-title"> Cybersecurity course</h3>
+      <p class="card-text">Learn the fundamentals of online security, threat detection, and risk management, and data protection.</p>
+      <p><span class="price-label">PRICE:</span> <span class="price-value">2500 L.E</span> </p>
+      <div class="card-footer">
+        <div class="card-profile">
+          <img src="training photo/photo_6043881346641806741_y.jpg" alt="Salma Tarek" />
+          <div class="card-profile-info">
+            <span class="card-profile-name">Salma Tarek</span>
+            <span class="card-profile-role">cypersecurity_Analyst</span>
+          </div>
+        </div>
+        <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  
+  
+        <!-- Single Card -->
+        <div class="card swiper-slide">
+          <div class="card-image">
+            <img src="training photo/photo_6041629546828122441_x.jpg" alt="Animation" />
+            <div class="card-tag">HYRNET_PIUS</div>
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Human Resource course</h3>
+            <p class="card-text">Learn how to manage employees and develop strategies to increase productivity and interaction within the organization.
+            </p> 
+            <p><span class="price-label">PRICE:</span> <span class="price-value">2000 L.E</span> </p>
+  
+            <div class="card-footer mb-3">
+              <div class="card-profile">
+                <img src="training photo/user-5.jpg" alt="David Park" />
+                <div class="card-profile-info">
+                  <span class="card-profile-name">David Park</span>
+                  <span class="card-profile-role">HR</span>
+                </div>
+              </div>
+              <button class="btn btn-subscribe" data-bs-toggle="modal" data-bs-target="#paymentModal">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  
+  
+      </div><!-- Modal الدفع -->
+      <div class="modal fade" id="paymentModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content p-4">
+            <div class="modal-header" style="background-color: rgba(255, 87, 34, 0.9);">
+              <h5 class="modal-title" style="color: white; ">Payment form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <form id="paymentForm">
+                <div class="mb-3">
+                  <label>Username</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label>Vodafone Cash number</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label>Paid in full</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <button type="submit" class="btn " style="background-color: rgba(255, 87, 34, 0.9); color: white;">Send</button>
+              </form>
+      
+              <!-- رسالة النجاح -->
+              <div id="confirmationMessage" class="alert alert-success mt-3 d-none">
+              <P>Payment has been Completed successfully</P> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'ar,en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  
+     
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+     
+   
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>HYRNET</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    
+    <style>
+      
+
+      .footer-logo img {
+ 
+
+  
+ height: 6vh;
+ 
+ margin-top: 6px;
+  margin-left: 20px;
+   
+ 
+ }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* أو أي لون مناسب */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل بسيط للشكل */
+  font-size: 1.1rem;
+}
+
+
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+
+
+
+body {
+    
+    background-color: #ffff;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+
+
+
+
+
+
+.container-text {
+    
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+.title h2 {
+    
+    color: black;
+    font-weight: 600px bold;
+    
+}
+
+.title h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 60px;
+    
+
+}
+
+.highlight-green {
+    color: rgba(255, 87, 34, 0.9);;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.bg-light {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.form-check-input {
+    transform: scale(1.2);
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background: rgba(255, 87, 34, 0.9);;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: rgba(255, 87, 34, 0.9);;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+}
+
+
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(255, 87, 34, 0.9);; /* النص باللون البني */
+    background-color: #fff; /* خلفية فاتحة مع ظلال خفيفة */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.mb-3 {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.btn-dark {
+    background-color: rgba(255, 87, 34, 0.9); /* البني */
+    border: none;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out ;
+}
+
+.btn-dark:hover {
+    background-color: rgba(255, 87, 34, 0.9);; /* البني الداكن عند التحويم */
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+}
+
+.btn-dark:active {
+    background-color:rgba(255, 87, 34, 0.9);; /* اللون البني الداكن عند الضغط */ 
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+}
+/* موبايلات */
+@media (max-width: 576px) {
+  .footer-logo img {
+    height: 5vh;
+    margin-left: 10px;
+  }
+
+  .nav-profile {
+    right: 10px;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #google_translate_element {
+    left: 10px !important;
+    top: 60px;
+  }
+}
+
+/* تابلت */
+@media (min-width: 577px) and (max-width: 992px) {
+  .nav-profile {
+    right: 20px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* اللابتوب وما فوق */
+@media (min-width: 993px) {
+  .container-text {
+    padding: 100px 40px;
+  }
+}
+
+
+
+  
+    </style>
+
+</head>
+<body>
+<section>
+  <nav class="navbar navbar-expand-lg  navbar-light fixed-top" >
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    
+    <div class="container">
+        
+      
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html" class="nav-link" href="#">About</a>
+            </li>
+            
+              <li class="nav-item">
+                <a href="Personality home.html"  class="nav-link" href="#">Personal Test</a>
+              </li>
+              <li class="nav-item">
+                <a href="dashboard.php"  class="nav-link" href="#">Job</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="interview.html" class="nav-link" href="#">Interview</a>
+              </li>
+              <li class="nav-item">
+                <a href="training.html"  class="nav-link" href="#">Training</a>
+              </li>
+              <li class="nav-item">
+                <a href="reviews.html" class="nav-link" href="#">Reviews</a>
+              </li>
+             </ul>
+             
+             
+
+
+    </div>
+    <a href="profile.php" class="nav-profile">
+      <i class="fas fa-user-circle"></i>
+      <span>Profile</span>
+    </a>
+     
+                <!-- ضيفي ده في الهيدر أو فوق الفوتر -->
+<div id="google_translate_element" style="position: fixed; top: 10px; left: 200px; z-index: 9999; "></div>
+    
+    </div>
+  </nav>
+</section>
+   
+
+
+
+
+
+
+
+
+      
+
+
+<div class="container mt-5 text-center">
+         
+  <h2>Personality Quiz</h2>
+  <h1>Discover <span class="highlight-green">who you truly are</span> with the Personality test</h1>
+  <p>With this test, you will find out your exact personality type.</p>
+</div>
+
+<div class="container mt-5">
+
+    <form id="quizForm">
+      <!-- الأسئلة -->
+      <div class="mb-3">
+        <label>1. Do you enjoy analyzing data or
+          information before making
+          decisions??</label><br>
+        <input type="radio" name="q1" value="yes" required> Yes
+        <input type="radio" name="q1" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>2. Do you often find yourself thinking
+          logically to solve daily problems?</label><br>
+        <input type="radio" name="q2" value="yes" required> Yes
+        <input type="radio" name="q2" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>3. Do you prefer tasks that require
+          accuracy and attention to detail?</label><br>
+        <input type="radio" name="q3" value="yes" required> Yes
+        <input type="radio" name="q3" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>4. Are you good at clearly expressing
+          your ideas to others?</label><br>
+        <input type="radio" name="q4" value="yes" required> Yes
+        <input type="radio" name="q4" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>5. Do you enjoy building social
+          relationships at work?</label><br>
+        <input type="radio" name="q5" value="yes" required> Yes
+        <input type="radio" name="q5" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>6. Do you prefer jobs that involve
+          constant communication with clients
+          or team members?</label><br>
+        <input type="radio" name="q6" value="yes" required> Yes
+        <input type="radio" name="q6" value="no"> No
+      </div>
+      <div class="mb-3">
+        <label>7. Do you enjoy coming up with new or
+          unconventional ideas?</label><br>
+        <input type="radio" name="q7" value="yes" required> Yes
+        <input type="radio" name="q7" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>8. Do you consider yourself creative
+          when completing tasks?</label><br>
+        <input type="radio" name="q8" value="yes" required> Yes
+        <input type="radio" name="q8" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>9. Do you follow trends or creative
+          content to get inspired?</label><br>
+        <input type="radio" name="q9" value="yes" required> Yes
+        <input type="radio" name="q9" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>10. Do you enjoy using technology tools
+          or learning new technical skills?</label><br>
+        <input type="radio" name="q10" value="yes" required> Yes
+        <input type="radio" name="q10" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>11. Do you like writing code or working
+          with software?</label><br>
+        <input type="radio" name="q11" value="yes" required> Yes
+        <input type="radio" name="q11" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>12. Do you often think about how to
+          improve digital systems or
+          processes?</label><br>
+        <input type="radio" name="q12" value="yes" required> Yes
+        <input type="radio" name="q12" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>13. Do you feel more productive when
+          working alone?</label><br>
+        <input type="radio" name="q13" value="yes" required> Yes
+        <input type="radio" name="q13" value="no"> No
+      </div>
+  
+      <div class="mb-3">
+        <label>14. Do you prefer sharing ideas and
+          working in a team to achieve goals?</label><br>
+        <input type="radio" name="q14" value="yes" required> Yes
+        <input type="radio" name="q14" value="no"> No
+      </div>
+      <div class="mb-3">
+        <label>15.Do you dislike being constantly
+          monitored or directed while working?</label><br>
+        <input type="radio" name="q15" value="yes" required> Yes
+        <input type="radio" name="q15" value="no"> No
+      </div>
+  
+  
+      <button type="submit" class="btn btn-dark " style="background-color:rgba(255, 87, 34, 0.9) ;">Submit</button>
+    </form>
+  
+    <div id="result" class="mt-4 fs-4 text-dark"></div>
+  </div>
+  
+            
+  <script>
+    document.getElementById('quizForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+  
+      const answers = {};
+for (let i = 1; i <= 15; i++) {
+  const selected = document.querySelector(`input[name="q${i}"]:checked`);
+  if (!selected) {
+    alert("Please answer all the questions.");
+    return;
+  }
+  answers[`q${i}`] = selected.value;
+}
+
+  
+      const careerScores = {};
+  
+      const addPoints = (careers, points = 1) => {
+        careers.forEach(career => {
+          if (!careerScores[career]) {
+            careerScores[career] = 0;
+          }
+          careerScores[career] += points;
+        });
+      };
+  
+      // Scoring logic
+      if (answers.q1 === "yes") addPoints(["Business Analyst", "Junior Business Analyst", "Data Analyst"], 2);
+  if (answers.q2 === "yes") addPoints(["Data Analyst", "QA Tester", "General Accountant"], 2);
+  if (answers.q3 === "yes") addPoints(["General Accountant", "Operations Specialist", "QA Tester"]);
+  if (answers.q4 === "yes") addPoints(["Product Manager", "Content Creator", "UX Designer"]);
+  if (answers.q5 === "yes") addPoints(["Sales & Business Development Representative", "Real Estate Sales Agent", "Customer Account Manager"]);
+  if (answers.q6 === "yes") addPoints(["Human Resources Generalist", "Recruiter", "Customer Account Manager"]);
+  if (answers.q7 === "yes") addPoints(["Content Creator", "Digital Marketing Manager", "UX Designer"], 2);
+  if (answers.q8 === "yes") addPoints(["UI/UX Web Designer", "Graphic Designer", "Social Media Manager"]);
+  if (answers.q9 === "yes") addPoints(["Content Creator", "UI/UX Researcher", "Copywriter"]);
+  if (answers.q10 === "yes") addPoints(["Front End Developer", "QA Tester", "Data Scientist"]);
+  if (answers.q11 === "yes") addPoints(["Back-end .NET Core Developer", "Front End Developer", "Data Analyst"], 2);
+  if (answers.q12 === "yes") addPoints(["Product Manager", "UX Designer", "Data Scientist"]);
+  if (answers.q13 === "yes") addPoints(["Back-end .NET Core Developer", "Operations Specialist"]);
+  if (answers.q14 === "yes") addPoints(["Project Coordinator", "HR Business Partner", "Call Center Agent"]);
+  if (answers.q15 === "yes") addPoints(["Product Manager", "Content Creator", "Real Estate Sales Agent"], 2);
+  
+      const sortedCareers = Object.entries(careerScores)
+        .sort((a, b) => b[1] - a[1])
+        .filter(([career, score]) => score > 0)
+        .slice(0, 3);
+  
+      let resultHTML = "";
+      if (sortedCareers.length > 0) {
+        resultHTML += `
+          <h3 class="mt-5 mb-4 text-center" style="color:black;">Suggested Career Paths for You</h3>
+          <ul class="list-unstyled text-center" style="font-size: 18px;">`;
+  
+        const careerDescriptions = {
+          "Business Analyst": "Analyze business needs and improve processes using data and insights.",
+          "Product Manager": "Lead product development, strategy, and communication across teams.",
+          "Data Analyst": "Interpret and visualize data to help businesses make better decisions.",
+          "General Accountant": "Handle company accounts, budgets, and financial reporting.",
+          "Junior Business Analyst": "Support business analysis tasks and help in decision making.",
+          "Digital Marketing Manager": "Plan and execute digital campaigns to boost online presence.",
+          "Content Creator": "Develop engaging content for digital platforms.",
+          "Copywriter": "Write compelling marketing and brand content.",
+          "Graphic Designer": "Create visual content and graphics for brands and campaigns.",
+          "UI/UX Web Designer": "Design user-friendly, visually appealing web interfaces.",
+          "Sales & Business Development Representative": "Identify business opportunities and close sales.",
+          "Customer Account Manager": "Manage client relationships and satisfaction.",
+          "Human Resources Generalist": "Handle recruitment, employee relations, and HR policies.",
+          "Recruiter": "Find and attract top talent for companies.",
+          "Call Center Agent": "Support customers and solve issues over calls.",
+          "Real Estate Sales Agent": "Sell properties and manage client transactions.",
+          "Back-end .NET Core Developer": "Build and maintain server-side applications.",
+          "Front End Developer": "Develop and enhance website interfaces using HTML, CSS, JS.",
+          "QA Tester": "Test software for bugs and quality assurance.",
+          "Project Coordinator": "Manage project timelines, teams, and deliverables.",
+          "Operations Specialist": "Oversee daily operations and optimize workflows.",
+          "Data Scientist": "Build models to extract insights from large datasets.",
+          "HR Business Partner": "Align HR strategy with business goals.",
+          "Event Coordinator": "Organize and manage corporate or social events.",
+          "Social Media Manager": "Manage brand presence on social media platforms.",
+          "UI/UX Researcher": "Conduct research to improve digital user experience.",
+          "UX Designer": "Design seamless and enjoyable user experiences."
+        };
+  
+        sortedCareers.forEach(([career, _]) => {
+          const description = careerDescriptions[career] || "No description available.";
+          resultHTML += `
+            <li class="mb-4"><strong>${career}</strong><br>
+            <span style="font-size: 16px;">${description}</span></li>`;
+        });
+  
+        resultHTML += "</ul>";
+      } else {
+        resultHTML = '<p class="text-warning text-center mt-4">We could not determine a clear result. Try again!</p>';
+      }
+  
+      document.getElementById("result").innerHTML = resultHTML;
+    });
+  </script>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+ 
+</body>
+</html>
