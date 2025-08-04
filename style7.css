@@ -1,0 +1,526 @@
+body {
+  background-color:white;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  
+}
+
+
+
+
+.footer-logo img {
+ 
+
+  
+  height: 6vh;
+  
+  margin-top: 6px;
+   margin-left: 10px;
+    
+  
+  }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* أو أي لون مناسب */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ظل بسيط للشكل */
+}
+
+
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  right: 40px; /* خليه في اليمين */
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none !important;
+
+  color: rgba(255, 87, 34, 0.9);
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 14px;
+  border-radius: 5px;
+  
+  background: none;
+}
+
+.nav-profile:hover {
+  
+  color: white;
+  transform: scale(1.05);
+  outline: 2px solid rgba(255, 87, 34, 0.9);
+  box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+  background-color: rgba(255, 87, 34, 0.9);
+}
+
+.nav-profile i {
+  font-size: 30px;
+
+}
+
+
+
+
+
+
+.title h1 {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.subtitle h2 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+.hyrnet-title {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+
+
+.career-section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  gap: 5rem; /* اختياري للتفريق البصري */
+}
+
+
+.career-title {
+font-weight: bold;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.career-icon i {
+font-size: 4rem;
+color: rgba(255, 87, 34, 0.9); /* Bootstrap primary */
+}
+
+.career-heading {
+font-weight: bold;
+margin-top: 1rem;
+}
+
+.career-text {
+color: #555;
+font-size: 1rem;
+}
+
+
+.video-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+
+/* Animation: slide from top to center */
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+
+
+
+h3 {
+color:rgba(255, 87, 34, 0.9) ;
+text-align: center;
+font-size: xx-large;
+
+}
+h4 {
+color:black ;
+text-align: left;
+font-size: xx-large;
+
+}
+
+
+.img-fluid {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color:black;
+  color: rgba(255, 87, 34, 0.9);
+  border-radius: 10px 10px 0 0;
+}
+
+.container.text-center .row .col-md-4 img {
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+.hyrnet-name {
+margin: 40px 0;
+text-align: center;
+font-size: 3rem;
+font-weight: bold;
+color:rgba(255, 87, 34, 0.9) ;
+letter-spacing: 2px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background: transparent;
+padding: 15px 0;
+border-radius: 10px;
+box-shadow: none;
+margin-top: 60px;
+}
+
+
+.wrapper {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+position: relative;
+}
+
+.card-list {
+display: flex;
+}
+
+.card {
+background: #fff;
+border-radius: 20px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+transition: transform 0.3s ease;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+height: 100%;
+margin-bottom: 60px;
+}
+
+.card:hover {
+transform: translateY(-10px);
+}
+
+.card-image {
+position: relative;
+}
+
+.card-image img {
+width: 100%;
+border-radius: 22px;
+padding: 10px;
+aspect-ratio: 16 / 9;
+object-fit: cover;
+}
+
+.card-tag {
+position: absolute;
+top: 25px;
+left: 25px;
+font-size: 0.75rem;
+color:rgba(255, 87, 34, 0.9) ;
+background:white;
+padding: 5px 15px;
+border-radius: 30px;
+font-weight: 600;
+text-transform: uppercase;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+padding: 10px 25px 25px;
+flex: 1;
+display: flex;
+flex-direction: column;
+
+}
+
+.card-title {
+font-size: 1.5rem;
+font-weight: 600;
+margin-bottom: 15px;
+color: #111;
+}
+
+.card-text {
+font-size: 0.95rem;
+color: #747474;
+margin-bottom: 20px;
+line-height: 1.2;
+}
+
+.card-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-top: 1px solid rgba(0, 0, 0, 0.08);
+padding-top: 15px;
+margin-top: auto;
+background-color: white;
+}
+
+.card-profile {
+display: flex;
+align-items: center;
+background-color: white;
+}
+
+.card-profile img {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 10px;
+border: 2px solid #fff;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-profile-name {
+font-size: 0.875rem;
+font-weight: 600;
+color: #202020;
+}
+
+.card-profile-role {
+font-size: 0.6rem;
+color: #7A7A7A;
+
+}
+
+
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+background:white;
+width: 15px;
+height: 15px;
+opacity: 1;
+position: relative;
+margin-bottom: 15px;
+}
+
+.swiper-pagination-bullet-active {
+background: black ;
+}
+
+.swiper-pagination-bullet-active::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: white;
+transform-origin: left center;
+transform: scaleX(0);
+animation: autoplay-loading 5s linear forwards;
+}
+
+.container:hover .swiper-pagination-bullet-active::before {
+animation-play-state: paused;
+}
+
+@keyframes autoplay-loading {
+0% {
+  transform: scaleX(0);
+}
+100% {
+  transform: scaleX(1);
+}
+}
+
+/* تخصيص زر Subscribe */
+.btn-subscribe {
+  background-color: rgba(255, 87, 34, 0.9);
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+.btn-subscribe:hover {
+  background-color: rgba(255, 87, 34, 0.9);
+  box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+  transform: scale(1.05);
+  color: white; /* تغيير لون النص إلى الأبيض عند المرور */
+}
+
+.btn-subscribe:active {
+  color: white; /* لون النص يبقى أبيض عند الضغط */
+  transform: scale(1); /* إزالة تأثير التكبير عند الضغط */
+}
+
+
+/* تخصيص الأزرار السابقة والتالية في Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+color: rgba(255, 87, 34, 0.9); /* اللون البرتقالي للأزرار */
+transition: background-color 0.3s, color 0.3s; /* تأثيرات الانتقال */
+}
+
+/* زر السابق بلون أسود افتراضي */
+.swiper-button-prev {
+color: black; /* اللون الأسود قبل التفاعل */
+transition: background-color 0.3s, color 0.3s;
+}
+
+/* زر التالي بلون برتقالي افتراضي */
+.swiper-button-next {
+color: black; /* برتقالي */
+transition: background-color 0.3s, color 0.3s;
+}
+
+/* عند تمرير الماوس */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+
+color: black; /* نص أبيض */
+}
+
+/* عند الضغط */
+.swiper-button-prev:active,
+.swiper-button-next:active {
+
+color:black; /* نص برتقالي */
+}
+
+.price-label {
+color:rgba(255, 87, 34, 0.9); 
+font-weight: bold;
+}
+.price-value {
+font-weight: bold;
+}.payment-box {
+animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+
+/* ✅ تعديلات عامة لتصغير الخطوط وتعديل المسافات على الشاشات الصغيرة */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 28px !important;
+  }
+
+  .hero-section h2 {
+    font-size: 18px !important;
+  }
+
+  .hyrnet-title {
+    font-size: 30px !important;
+  }
+
+  .career-title {
+    font-size: 1.8rem !important;
+  }
+
+  .career-heading {
+    font-size: 1.2rem !important;
+  }
+
+  .career-text {
+    font-size: 0.9rem !important;
+  }
+
+  .nav-profile {
+    right: 10px;
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .nav-profile i {
+    font-size: 22px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; /* إخفاء أزرار السوايبر على الموبايل لعدم التزاحم */
+  }
+}
+
+/* ✅ لضبط عرض الكروت على الشاشات الصغيرة داخل swiper */
+@media (max-width: 576px) {
+  .card {
+    margin: 10px 0;
+  }
+
+  .card-content {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ ضمان عدم خروج المحتوى عن الشاشة */
+body {
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .container .row .col-md-4 img,
+  .container .row .col-md-4 video {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+}
+

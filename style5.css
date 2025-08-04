@@ -1,0 +1,502 @@
+body  {
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    
+
+}
+
+
+.footer-logo img {
+ 
+
+  
+    height: 6vh;
+    
+    margin-top: 6px;
+     margin-left: 20px;
+      
+    
+    }
+  
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+
+
+
+  .nav-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    right: 40px; /* خليه في اليمين */
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none !important;
+  
+    color: rgba(255, 87, 34, 0.9);
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 14px;
+    border-radius: 5px;
+    
+    background: none;
+  }
+  
+  .nav-profile:hover {
+    
+    color: white;
+    transform: scale(1.05);
+    outline: 2px solid rgba(255, 87, 34, 0.9);
+    box-shadow: 4px 5px 17px -4px rgba(255, 87, 34, 0.9);
+    background-color: rgba(255, 87, 34, 0.9);
+  }
+  
+  .nav-profile i {
+    font-size: 30px;
+  
+  }
+a{
+    text-decoration: none;
+}
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+header a{
+    color: #eee;
+    margin-right: 40px;
+}
+
+/* carousel */
+.carousel.container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 110px;
+    font-size: 1rem ;
+
+}
+
+.carousel-inner {
+    margin-bottom: 20px;
+
+}
+
+
+.carousel.container  .carousel-item .row h3{
+    font-size: 2.2rem;
+   
+}
+.carousel.container  .carousel-item .row h5{
+
+    font-size: 1.8rem;
+    
+}
+.carousel.container  .carousel-item .row p{
+    margin-top: 20px;
+    
+}
+.carousel.container  .carousel-item .row li{
+    color: #000;
+    font-size: .8rem;
+}
+.carousel.container .carousel-item .buttons {
+    display: flex;
+    grid-template-columns: repeat repeat(2, 150px); /* عرض الأزرار متساوي */
+    grid-template-rows: 35px;
+    gap: 50px; /* المسافة بين الأزرار */
+    margin-top: 20px;
+    justify-content: center;
+    font-size: .9rem ;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel.container .carousel-item .buttons button {
+    border: none;
+    background-color: rgba(255, 87, 34, 0.9);
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500 bold;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    outline: none;
+   
+    transition: 0.3s ease;
+    min-width: 160px;
+    padding: 10px 0;
+}
+
+/* التأثير عند المرور على الأزرار */
+.carousel.container .carousel-item .buttons button:hover {
+    color: white;
+    background-color: rgba(255, 87, 34, 0.9);
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+}
+
+/* زر الاشتراك بنفس التنسيق مثل زر Start Interview */
+.carousel.container .carousel-item .buttons button:nth-child(2) {
+    background-color: rgba(255, 87, 34, 0.9); /* نفس لون الزر الأول */
+    color: white; /* نفس اللون */
+    border: none;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+    
+}
+
+
+
+
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+.thumbnail .item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 120px;
+}
+
+.thumbnail .item:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.thumbnail .content {
+    margin-top: 8px;
+}
+
+.thumbnail .title {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.thumbnail .description {
+    font-size: 12px;
+    color:#2c2929 ;
+}
+
+/* Carousel Buttons */
+.text-center .btn {
+    min-width: 140px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 87, 34, 0.9);
+ 
+    color: white;
+    margin-bottom: 20px;
+    
+  
+}
+.text-center .btn:hover {
+    min-width: 140px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color:rgba(255, 87, 34, 0.9) ;
+    color: white;
+    box-shadow: 0 0 10px 3px rgba(255, 87, 34, 0.9); /* تأثير التوهج */
+    transform: scale(1.05);
+    
+  
+}
+
+
+
+.carousel-item img {
+    width: auto;             /* خليها تلقائية العرض حسب الصورة */
+    max-width: 100%;         /* لا تتجاوز الحاوية */
+    height: auto;
+    max-height: 580px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .carousel-item {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        max-height: 300px;
+    }
+}
+
+
+
+/* arrows */
+.arrows{
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: .5s;
+}
+.arrows button:hover{
+   background-color:  rgba(255, 87, 34, 0.9);
+    color: white;
+}
+
+/* animation */
+.carousel .list .item:nth-child(1){
+    z-index: 1;
+}
+
+/* animation text in first item */
+
+.carousel .list .item:nth-child(1) .content .author,
+.carousel .list .item:nth-child(1) .content .title,
+.carousel .list .item:nth-child(1) .content .topic,
+.carousel .list .item:nth-child(1) .content .des,
+.carousel .list .item:nth-child(1) .content .buttons
+{
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent .5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+    to{
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.carousel .list .item:nth-child(1) .content .title{
+    animation-delay: 1.2s!important;
+}
+.carousel .list .item:nth-child(1) .content .topic{
+    animation-delay: 1.4s!important;
+}
+.carousel .list .item:nth-child(1) .content .des{
+    animation-delay: 1.6s!important;
+}
+.carousel .list .item:nth-child(1) .content .buttons{
+    animation-delay: 1.8s!important;
+}
+/* create animation when next click */
+.carousel.next .list .item:nth-child(1) img{
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    border-radius: 30px;
+    animation: showImage .5s linear 1 forwards;
+}
+@keyframes showImage{
+    to{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+.carousel.next .thumbnail .item:nth-last-child(1){
+    overflow: hidden;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.prev .list .item img{
+    z-index: 100;
+}
+@keyframes showThumbnail{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+}
+.carousel.next .thumbnail{
+    animation: effectNext .5s linear 1 forwards;
+}
+
+@keyframes effectNext{
+    from{
+        transform: translateX(150px);
+    }
+}
+
+/* running time */
+
+.carousel .time{
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+}
+
+.carousel.next .time,
+.carousel.prev .time{
+    animation: runningTime 3s linear 1 forwards;
+}
+@keyframes runningTime{
+    from{ width: 100%}
+    to{width: 0}
+}
+
+
+/* prev click */
+
+.carousel.prev .list .item:nth-child(2){
+    z-index: 2;
+}
+
+.carousel.prev .list .item:nth-child(2) img{
+    animation: outFrame 0.5s linear 1 forwards;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@keyframes outFrame{
+    to{
+        width: 150px;
+        height: 220px;
+        bottom: 50px;
+        left: 50%;
+        border-radius: 20px;
+    }
+}
+
+.carousel.prev .thumbnail .item:nth-child(1){
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail .5s linear 1 forwards;
+}
+.carousel.next .arrows button,
+.carousel.prev .arrows button{
+    pointer-events: none;
+}
+.carousel.prev .list .item:nth-child(2) .content .author,
+.carousel.prev .list .item:nth-child(2) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .topic,
+.carousel.prev .list .item:nth-child(2) .content .des,
+.carousel.prev .list .item:nth-child(2) .content .buttons
+{
+    animation: contentOut 1.5s linear 1 forwards!important;
+}
+
+@keyframes contentOut{
+    to{
+        transform: translateY(-150px);
+        filter: blur(20px);
+        opacity: 0;
+    }
+}
+
+
+
+
+@keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 576px) {
+    .thumbnail {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .thumbnail .item {
+      width: 90%;
+    }
+  
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9; /* يحافظ على النسبة */
+        border-radius: 20px;
+    }
+    
+    
+  
+    .carousel.container .carousel-item .row h3 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel.container .carousel-item .row h5 {
+      font-size: 1.2rem;
+    }
+  
+    .carousel.container .carousel-item .row li,
+    .carousel.container .carousel-item .row p {
+      font-size: 0.9rem;
+    }
+  
+    .carousel.container .carousel-item .buttons {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  
+  
